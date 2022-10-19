@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<APIProxy revison="1" name="loyalty_20">
+  <CreatedAt>1666166473</CreatedAt>
+  <Description>loyalty_2</Description>
+  <ProxyEndpoints>
+    <ProxyEndpoint>default</ProxyEndpoint>
+  </ProxyEndpoints>
+  <TargetEndpoints>
+    <TargetEndpoint>default</TargetEndpoint>
+  </TargetEndpoints>
+  <Policies>
+    <Policy>add-cors</Policy>
+  </Policies>
+  <Policies>
+    <Policy>impose-quota</Policy>
+  </Policies>
+  <Policies>
+    <Policy>remove-query-param-apikey</Policy>
+  </Policies>
+</APIProxy>

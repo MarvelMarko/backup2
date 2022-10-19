@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<TargetEndpoint name="default">
+  <Description>loyalty_2</Description>
+  <PreFlow name="PreFlow">
+    <Request/>
+    <Response/>
+  </PreFlow>
+  <Flows/>
+  <PostFlow name="PostFlow">
+    <Request/>
+    <Response/>
+  </PostFlow>
+  <HTTPTargetConnection>
+    <URL>https://mocktarget.apigee.net</URL>
+  </HTTPTargetConnection>
+</TargetEndpoint>

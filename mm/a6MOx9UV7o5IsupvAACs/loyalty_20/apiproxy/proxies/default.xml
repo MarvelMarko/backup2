@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ProxyEndpoint name="default">
+  <Description>loyalty_2</Description>
+  <PreFlow name="PreFlow">
+    <Request>
+      <Step>
+        <Name>add-cors</Name>
+      </Step>
+      <Step>
+        <Name>impose-quota</Name>
+      </Step>
+      <Step>
+        <Name>remove-query-param-apikey</Name>
+      </Step>
+    </Request>
+    <Response/>
+  </PreFlow>
+  <Flows>
+    <Flow name="POST /exchange">
+      <Condition>(proxy.pathsuffix MatchesPath "/exchange") and (request.verb = "POST")</Condition>
+      <Description/>
+      <Request/>
+      <Response/>
+    </Flow>
+    <Flow name="POST /postpurchase">
+      <Condition>(proxy.pathsuffix MatchesPath "/postpurchase") and (request.verb = "POST")</Condition>
+      <Description/>
+      <Request/>
+      <Response/>
+    </Flow>
+    <Flow name="POST /readforpartner">
+      <Condition>(proxy.pathsuffix MatchesPath "/readforpartner") and (request.verb = "POST")</Condition>
+      <Description/>
+      <Request/>
+      <Response/>
+    </Flow>
+  </Flows>
+  <PostFlow name="PostFlow">
+    <Request/>
+    <Response/>
+  </PostFlow>
+  <HTTPProxyConnection>
+    <BasePath>/loyalty/partner</BasePath>
+    <VirtualHost>default</VirtualHost>
+    <VirtualHost>secure</VirtualHost>
+  </HTTPProxyConnection>
+  <RouteRule name="default">
+    <TargetEndpoint>default</TargetEndpoint>
+  </RouteRule>
+</ProxyEndpoint>
