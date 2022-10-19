@@ -1,0 +1,20 @@
+{
+ "openapi": "3.0.0",
+ "info": {
+  "version": "1.0.0",
+  "title": "deleteDownloadUploadDocumentToMain"
+ },
+ "basePath": "/common",
+ "servers": [
+  {
+   "url": "https://mocktarget.apigee.net"
+  }
+ ],
+ "paths": {
+  "/v1/dms/docs": {
+   "get": {},
+   "post": {},
+   "delete": {}
+  }
+ }
+}

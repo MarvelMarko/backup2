@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ProxyEndpoint name="default">
+  <Description>deleteDownloadUploadDocumentToMain</Description>
+  <PreFlow name="PreFlow">
+    <Request>
+      <Step>
+        <Name>add-cors</Name>
+      </Step>
+      <Step>
+        <Name>impose-quota</Name>
+      </Step>
+      <Step>
+        <Name>remove-query-param-apikey</Name>
+      </Step>
+    </Request>
+    <Response/>
+  </PreFlow>
+  <Flows>
+    <Flow name="GET /v1/dms/docs">
+      <Condition>(proxy.pathsuffix MatchesPath "/v1/dms/docs") and (request.verb = "GET")</Condition>
+      <Description/>
+      <Request/>
+      <Response/>
+    </Flow>
+    <Flow name="POST /v1/dms/docs">
+      <Condition>(proxy.pathsuffix MatchesPath "/v1/dms/docs") and (request.verb = "POST")</Condition>
+      <Description/>
+      <Request/>
+      <Response/>
+    </Flow>
+    <Flow name="DELETE /v1/dms/docs">
+      <Condition>(proxy.pathsuffix MatchesPath "/v1/dms/docs") and (request.verb = "DELETE")</Condition>
+      <Description/>
+      <Request/>
+      <Response/>
+    </Flow>
+  </Flows>
+  <PostFlow name="PostFlow">
+    <Request/>
+    <Response/>
+  </PostFlow>
+  <HTTPProxyConnection>
+    <BasePath>/common</BasePath>
+    <VirtualHost>default</VirtualHost>
+    <VirtualHost>secure</VirtualHost>
+  </HTTPProxyConnection>
+  <RouteRule name="default">
+    <TargetEndpoint>default</TargetEndpoint>
+  </RouteRule>
+</ProxyEndpoint>

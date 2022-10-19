@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<APIProxy revison="1" name="deleteDownloadUploadDocumentToMain0">
+  <CreatedAt>1666167604</CreatedAt>
+  <Description>deleteDownloadUploadDocumentToMain</Description>
+  <ProxyEndpoints>
+    <ProxyEndpoint>default</ProxyEndpoint>
+  </ProxyEndpoints>
+  <TargetEndpoints>
+    <TargetEndpoint>default</TargetEndpoint>
+  </TargetEndpoints>
+  <Policies>
+    <Policy>add-cors</Policy>
+  </Policies>
+  <Policies>
+    <Policy>impose-quota</Policy>
+  </Policies>
+  <Policies>
+    <Policy>remove-query-param-apikey</Policy>
+  </Policies>
+</APIProxy>

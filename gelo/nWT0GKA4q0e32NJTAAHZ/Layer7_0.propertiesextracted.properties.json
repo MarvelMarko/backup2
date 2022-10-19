@@ -1,0 +1,10 @@
+{
+ "template.service.deleteDownloadUploadDocumentToMain.Resources.ResourceSet.xml.All.Required.OneOrMore.Required.All.Required.OneOrMore.Required.HttpRoutingAssertion.HttpRoutingAssertion.ProtectedServiceUrl.stringValue": "${gateway.targetServer.java_tnp2}/dms/deleteDocument",
+ "template.service.deleteDownloadUploadDocumentToMain.Resources.ResourceSet.xml.All.Required.OneOrMore.Required.All.Required.OneOrMore.Required.HttpRoutingAssertion.HttpRoutingAssertion.ProtectedServiceUrl.stringValue.1": "${gateway.targetServer.mock_common_documentmanagement}/dms/downloadDocument${request.url.query}",
+ "template.service.deleteDownloadUploadDocumentToMain.Resources.ResourceSet.xml.All.Required.OneOrMore.Required.All.Required.OneOrMore.Required.HttpRoutingAssertion.HttpRoutingAssertion.ProtectedServiceUrl.stringValue.2": "${gateway.targetServer.java_tnp2}/dms/uploadDocument",
+ "template.service.deleteDownloadUploadDocumentToMain.ServiceDetail.ServiceMappings.HttpMapping.UrlPattern": "/common/v1/dms/docs",
+ "template.service.deleteDownloadUploadDocumentToMain.ServiceDetail.ServiceMappings.HttpMapping.Verbs.1.Verb": "GET",
+ "template.service.deleteDownloadUploadDocumentToMain.ServiceDetail.ServiceMappings.HttpMapping.Verbs.2.Verb": "POST",
+ "template.service.deleteDownloadUploadDocumentToMain.ServiceDetail.ServiceMappings.HttpMapping.Verbs.3.Verb": "DELETE",
+ "template.service.deleteDownloadUploadDocumentToMain.ServiceDetail.ServiceMappings.HttpMapping.Verbs.4.Verb": "OPTIONS"
+}
