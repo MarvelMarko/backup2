@@ -1,7 +1,7 @@
 git clone https://mark.angelo.marinas:NejphKKAUuThv4KT6YxeaRAiq1H3Skw77HxbHI@innersource.accenture.com/scm/~keith.lorenz.tan/apigeemigrationtool.git
 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
 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
-https://marvelmarko:NejphKKAUuThv4KT6YxeaRAiq1H3Skw77HxbHI@github.com/KeithTan08/backup.git
+https://marvelmarko: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@github.com/KeithTan08/backup.git
 
 
 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
