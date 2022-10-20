@@ -1,0 +1,24 @@
+{
+ "openapi": "3.0.0",
+ "info": {
+  "version": "1.0.0",
+  "title": "loyalty_2"
+ },
+ "basePath": "/loyalty/partner",
+ "servers": [
+  {
+   "url": "https://mocktarget.apigee.net"
+  }
+ ],
+ "paths": {
+  "/exchange": {
+   "post": {}
+  },
+  "/postpurchase": {
+   "post": {}
+  },
+  "/readforpartner": {
+   "post": {}
+  }
+ }
+}
